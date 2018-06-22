@@ -17,7 +17,7 @@
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Profiles</h1>
+  <h1>Details page </h1>
 </div>
 
 <nav class="navbar navbar-inverse">
@@ -34,6 +34,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/myapp/index/">Home</a></li>
         <li><a href="/myapp/profiles/">Profiles</a></li>
+        <li class="active"><a href="/myapp/logout/">Log out</a></li>
 
           </ul>
     </div>
@@ -51,6 +52,7 @@ th, td {
 <table style="width:100%">
 
     <tr>
+        <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
         <th>Mobile Number</th>
@@ -62,7 +64,9 @@ th, td {
 
     </tr>
     {% for p in p%}
+
     <tr>
+        <td>{{p.id}}</td>
         <td>{{p.firstname}}</td>
         <td>{{p.lastname}} </td>
         <td>{{p.mobile_num}}</td>
@@ -74,6 +78,7 @@ th, td {
 
     </tr>
     {% endfor %}
+
 </table>
 </body>
 </html>

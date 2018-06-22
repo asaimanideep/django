@@ -17,7 +17,7 @@
 <body>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Profiles Page</h1>
+  <h1>Log out Page</h1>
 </div>
 
 <nav class="navbar navbar-inverse">
@@ -33,38 +33,17 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/myapp/index/">Home</a></li>
-          <li><a href="/myapp/profiles/">Profiles</a></li>
-          <li class="active"><a href="/myapp/logout/">Log out</a></li>
+
+
           </ul>
     </div>
   </div>
 </nav>
-<a href="/myapp/getdetails/">Get Full Details</a>
-<style>
-table, th, td {
-    border: 1px solid black;
-}
-th, td {
-    padding: 5px;
-}
-</style>
-
-<table style="width:100%">
-    <tr>
-        <th>ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Mobile Number</th>
-    </tr>
-    {% for p in p%}
-    <tr>
-        <td><a href="/myapp/profiles/{{p.id}}/">{{p.id}}</a></td>
-        <td>{{p.firstname}}</td>
-        <td>{{p.lastname}} </td>
-        <td>{{p.mobile_num}}</td>
-    </tr>
-    {% endfor %}
-</>
+<div class="container">
+<h1>Logged out</h1>
+<p>
+    You are successfully logged out!
+</p>
+</div>
 </body>
 </html>
-

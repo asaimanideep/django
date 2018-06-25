@@ -1,6 +1,7 @@
 from django.conf.urls import url,include
 from . import views
 from django.contrib.auth.views import login ,logout
+app_name='myapp'
 urlpatterns=[
     url(r'^$',views.home),
     url(r'^index/',views.index),

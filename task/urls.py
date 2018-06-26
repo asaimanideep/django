@@ -8,5 +8,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^myapp/', include('myapp.urls')),
+    #url('^social-auth/', include('social.apps.django_app.urls', namespace='social')),
 
 ]
